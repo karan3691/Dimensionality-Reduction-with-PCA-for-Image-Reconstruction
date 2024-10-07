@@ -1,0 +1,41 @@
+Dimensionality Reduction with PCA for Image Reconstruction
+
+Project Overview:
+
+This project implements Principal Component Analysis (PCA) for dimensionality reduction and image reconstruction. PCA is a technique used to reduce the number of features in data while retaining as much variance (information) as possible.
+
+Project Components:
+
+Preprocessing (preprocess.py):
+
+Loads images from a specified folder.
+Resizes and flattens images to prepare them for PCA.
+PCA Application (pca.py):
+
+Applies PCA to reduce the dimensionality of the image data.
+Transforms the original images to a lower-dimensional space and allows for reconstruction.
+Visualization (visualize.py):
+
+Reconstructs images from the reduced dimensions.
+Visualizes the original and reconstructed images to assess the performance of PCA.
+Main Execution (main.py):
+
+Executes the preprocessing, PCA, and visualization steps.
+Prints the explained variance ratio to indicate how much information is retained.
+Usage Instructions:
+
+Setup:
+
+Place your images in a folder and update the image_folder path in main.py.
+Install required libraries using pip install numpy scikit-learn pillow matplotlib.
+Run the Project:
+
+Execute the script with python3 main.py.
+Results:
+
+The console will display the number of samples, number of features, and explained variance ratio.
+Images will be displayed showing the comparison between the original and reconstructed images.
+Key Notes:
+
+Ensure you have a sufficient number of images for meaningful PCA analysis.
+Adjust n_components in main.py as needed to balance between dimensionality reduction and reconstruction quality.
